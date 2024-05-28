@@ -7,7 +7,7 @@ body {
   background-color: black;
 }
 main {
-  background-image: url(assets/img/bg.jpg);
+  background-image: url(bg.jpg);
   height: 80vh;
   background-repeat: no-repeat;
   background-size: max(1500px, 100vw);
@@ -262,8 +262,8 @@ input {
     border-radius: 15px;
     gap: 1rem;
     position: absolute;
-    top: 28rem;
-    right: 12rem;
+    top: 24rem;
+    right: 9rem;
 }
 
 .second .second-img .download-box img {
