@@ -1,0 +1,704 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+main {
+  background-image: url(assets/img/bg.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: max(1500px, 100vw);
+  background-position: center center;
+  position: relative;
+}
+
+main .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 62vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+nav .logo img {
+  width: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+nav .btn{
+    display: flex;
+    gap: 10px;
+}
+
+nav .btn button {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  border-style: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  /* margin-inline: 15px; */
+}
+
+nav .btn .sign {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+nav .btn .eng {
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  font-weight: 600;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+main .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: calc(100% - 100px);
+}
+
+main .text span {
+  line-height: 60px;
+}
+
+.t1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  text-align: center;
+}
+
+.t2 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  text-align: center;
+}
+
+.t3 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  text-align: center;
+}
+
+.mail {
+  width: 45vw;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  width: 20vw;
+  color: white;
+  font-size: 1.6rem;
+  padding: 15px;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid white;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+.mail .get {
+  width: 12vw;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  cursor: pointer;
+}
+
+.line {
+  height: 8px;
+  background-color: #565656;
+  width: 100%;
+}
+
+/* First Section */
+
+.first {
+  display: flex;
+  align-items: center;
+  max-width: 60vw;
+  color: white;
+  margin: 5rem auto;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.first .first-img {
+  display: flex;
+  position: relative;
+}
+
+.first .first-img img {
+  /* width: 100%; */
+  max-width: 565px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.first .first-img video {
+  z-index: -10;
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+  position: absolute;
+  top: 70px;
+  right: 35px;
+}
+
+.first .first-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+.first .first-text :nth-child(1) {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+.first .first-text :nth-child(2) {
+  font-size: 1.5rem;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  font-weight: 400;
+}
+
+.second {
+  display: flex;
+  max-width: 60vw;
+  align-items: center;
+  margin: 5rem auto;
+  color: white;
+  /* flex-wrap: wrap; */
+  /* gap: 1rem; */
+}
+
+.second .second-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.second .second-text :nth-child(1) {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+.second .second-text :nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+.second .second-img {
+  position: relative;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.second .second-img .download-box {
+    display: flex;
+    width: 100%;
+    max-width: 330px;
+    max-height: 300px;
+    background-color: black;
+    align-items: center;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    gap: 1rem;
+    position: absolute;
+    top: 28rem;
+    right: 12rem;
+}
+
+.second .second-img .download-box img {
+  width: 100%;
+  height: 100%;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.second .second-img .download-box p {
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.second .down{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.second .down :nth-child(2){
+    font-size: .9rem;
+    color: rgb(0, 113, 235);
+}
+
+.third .third-img{
+    display: flex;
+    position: relative;
+}
+
+.third .third-img img{
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    max-width: 555px;
+}
+
+.third .third-img video{
+    overflow: hidden;
+    width: 100%;
+    max-width: 63%;
+    z-index: -100;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+/* FAQ Section */
+
+.faq{
+    max-width: 60vw;
+    align-items: center;
+    margin: 4rem auto;
+}
+.faq h1{
+   font-size: 3rem;
+   color: white;
+   font-weight: 900;
+   font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.faq .main-box{
+    margin: 3rem auto;
+}
+
+.faq .box{
+   color: white;
+   font-size: 1.5rem;
+   font-weight: 600;
+   font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+   background-color: rgb(45,45,45);
+   padding: 2rem 1.8rem;
+   margin: .7rem auto;
+}
+
+.faq .span{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+    text-align: center;
+    margin-top: 3rem
+}
+
+.faq .mail1{
+    margin: 1rem auto;
+}
+
+.faq .mail1 input{
+    width: 17vw;
+    font-size: 1rem;
+}
+
+.faq .mail1 .get{
+    width: 10vw;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer{
+    max-width: 60vw;
+    margin: 4rem auto;
+}
+
+footer p{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+    color: white;
+    margin: 1rem 0;
+}
+
+footer a{
+    color: white;
+}
+
+footer .main-cointainer{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+footer .main-cointainer .container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+    gap: 1rem;
+}
+
+footer .btn .eng{
+    color: white;
+  border: 1px solid white;
+  background-color: rgb(24, 24, 24);
+  font-weight: 400;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+  sans-serif;
+  font-size: 1rem;
+  padding: 5px 1.5rem;
+}
+
+footer .btn{
+    margin: 1.5rem 0;
+}
+
+@media screen and (max-width:1400px) {
+    nav{
+        max-width: 75vw;
+    }
+    .first{
+        max-width: 80vw;
+    }
+    .first .first-text :nth-child(1){
+        font-size: 3rem;
+    }
+    .second{
+        max-width: 85vw;
+    }
+    .third{
+        max-width: 80vw;
+    }
+    .faq{
+        max-width: 80vw;
+    }
+    .mail{
+        width: 50vw;
+    }
+    .mail input{
+        width: 30vw;
+    }
+    .mail .get{
+        width: 25vw;
+    }
+    .faq .mail1 input{
+        width: 25vw;
+    }
+    .faq .mail1 .get{
+        width: 15vw;
+    }
+    footer{
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width:1000px){
+    nav{
+        max-width: 90vw;
+    }
+    main .text{
+        max-width: 70vw;
+        margin: auto;
+    }
+    main .text span{
+        line-height: 50px;
+    }
+    main .text .t1{
+        font-size: 2.1rem;
+    }
+    main .text .t2{
+        font-size: 1rem;
+    }
+    main .text .t3{
+        font-size: 1rem;
+    }
+    .mail{
+        width:60vw ;
+    }
+    .mail input{
+        width: 30vw;
+        font-size: 1.5rem;
+        padding: 5px 15px;
+        /* height: 20px; */
+    }
+    .mail .get{
+        width: 20vw;
+        font-size: 1.5rem;
+        padding: 2px 15px;
+    }
+    .first{
+        max-width: 90vw;
+    }
+    .first .first-text :nth-child(1){
+        font-size: 2.5rem;
+    }
+    .first .first-img img{
+        width: 500px;
+    }
+    .first .first-img video{
+        width: 390px;
+    }
+    .second{
+        max-width: 90vw;
+    }
+    .second .second-img img{
+        width: 450px;
+    }
+    .second .second-img .download-box{
+        max-width: 205px;
+        top: 14rem;
+        right: 105px;
+    }
+    .faq .mail1 input{
+        width: 35vw;
+    }
+    .faq .mail1 .get{
+        width: 18vw;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width:850px){
+    nav .logo img{
+        width: 100px;
+    }
+    main{
+        height: 50vmax;
+    }
+    main .box{
+        height: 50vmax;
+    }
+    main .text{
+        max-width: 100vmin;
+    }
+    .mail{
+        /* width: 80vw; */
+        flex-wrap: wrap;
+    }
+    .mail .get{
+        width: 25vw;
+        padding: 10px 15px;
+    }
+    .mail1{
+        width: 50vw;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .mail input{
+        width: 50vmin;
+    }
+    .first{
+        margin: 5rem auto;
+        width: 90vmin;
+        flex-wrap: wrap;
+    }
+    .first .first-text{
+        margin: auto;
+        text-align: center;
+    }
+    .first .first-text :nth-child(1){
+        font-size: 2rem;    
+        font-weight: 500;
+    }
+    .first .first-text :nth-child(2){
+        font-size: 1rem;    
+        font-weight: 200;
+    }
+    .first .first-img{
+        margin: auto;
+    }
+    .first .first-img img{
+        width: 100vw;
+    }
+    .first .first-img video{
+        width: 100vw;
+    }
+    .second{
+        margin: 5rem auto;
+        width: 90vmin;
+        flex-wrap:wrap-reverse;
+    }
+    .second .second-text{
+        margin: auto;
+        text-align: center;
+    }
+    .second .second-text :nth-child(1){
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .second .second-text :nth-child(2){
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .second .second-img{
+        margin: auto;
+    }
+    .second-img img{
+        width: 100%;
+    }
+    .second .second-img .download-box{
+        max-width: 230px;
+        top: 18rem;
+        right: 98px;
+    }
+    .third .third-img{
+        margin: auto;
+    }
+    .third .third-img img{
+        width: 100%;
+    }
+    .third .third-img video{
+        width: 100%;
+    }
+    .faq{
+        max-width: 90vmin;
+    }
+    .faq .mail1 input{
+        width: 70vw;
+        padding: 15px 10px;
+    }
+    .faq .mail1 .get{
+        width: 30vw;
+        padding: 15px 10px;
+    }
+    footer{
+        max-width: 90vmin;
+    }
+    .main-cointainer{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:600px){
+    nav{
+        height: 60px;
+    }
+    nav .logo img{
+        width: 80px;
+    }
+    nav .btn{
+        gap: 5px;
+    }
+    .mail{
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+    }
+    .mail input{
+        width: 75vw;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .mail .get{
+        width: 35vw;
+        font-size: 15px;
+        padding: 5px 10px 
+    }
+    main .text span{
+        line-height: 0px;
+    }
+    .text{
+        width: 90vw;
+        gap: 30px;
+    }
+    .text .t1{
+        font-size: 1.4rem;
+    }
+    .text .t2{
+        font-size: .9rem;
+    }
+    .text .t3{
+        font-size: .9rem;
+    }
+    .first-img img{
+        width: 100%;
+    }
+    .first-img video{
+        width: 75%;
+        right: 36px;
+        top: 52px;
+    }
+    .second-img img{
+        width: 100%;
+    }
+    .second-img .download-box{
+        width: 50%;
+        top: 15rem;
+        right: 72px;
+    }
+    .third-img img{
+        width: 100%;
+    }
+    .third-img video{
+        width: 65%;
+        top: 30px;
+        right: 69px;
+    }
+    .fourth .second-img img{
+        width: 100%;
+    }
+    }
